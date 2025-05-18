@@ -1,0 +1,25 @@
+.footer {
+    height: 10rem;
+    background-color: #38aecc;
+    color: #fff;
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span {
+    text-decoration: underline;
+}
+
+.resumeLink {
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+}

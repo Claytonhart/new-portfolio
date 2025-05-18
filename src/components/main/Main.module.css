@@ -1,0 +1,79 @@
+.page {
+    background-color: #38aecc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.name {
+    font-size: 8rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.description {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: -0.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    color: #e6e6e6;
+    transform: scale(1.2);
+}
+
+.downArrow {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: pointer;
+}
+
+.iconPulse {
+    color: white;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size: 4.5rem;
+    }
+
+    .description {
+        font-size: 2.5rem;
+    }
+}

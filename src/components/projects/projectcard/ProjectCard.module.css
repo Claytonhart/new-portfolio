@@ -1,0 +1,93 @@
+.card {
+    display: flex;
+    background: #fff;
+    color: #212b35;
+    width: 80%;
+    max-width: 120rem;
+    margin: 3rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.tech {
+    font-size: 2rem;
+    color: #637381;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: 1.4rem;
+    color: #637381;
+}
+
+.info {
+    flex-grow: 1;
+    width: 50%;
+    padding: 3rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+.imageContainer {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 3rem;
+    bottom: 1rem;
+}
+
+.buttonContainer a {
+    margin: 5px;
+    padding: 9px 14px;
+    font-size: 1.6rem;
+    font-family: inherit;
+    background-color: #38aecc;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
+.image {
+    max-width: 100%;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .tech {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .card {
+        flex-direction: column;
+        max-width: 90%;
+        width: 60rem;
+    }
+
+    .info {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .imageContainer {
+        width: 100%;
+    }
+}
